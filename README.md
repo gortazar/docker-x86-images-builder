@@ -15,7 +15,7 @@ Replace the username "gortazar" with your username, and then
 This will:
 
 * fire up an Ubuntu Trusty x86 virtual machine; 
-* run build-docker-image.sh script on it, which in turn will build a base docker image that would be available in your local repository as <username>/<ubuntu version>-base32:0.1 
+* run build-docker-image.sh script on it, which in turn will build a base docker image that would be available in your local repository as `<your_username>/<ubuntu_version>-base32:0.1` 
 
 You can publish this image to your Docker Hub repository for further usage if you want. This may ease building other docker x86 images. I've published the image for Ubuntu Trusty [in my repository](https://registry.hub.docker.com/u/gortazar/base32/).
 
