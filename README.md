@@ -1,8 +1,8 @@
-= Docker x86 images builder
+# Docker x86 images builder
 
 This project provides a script for building x86 (32 bits) docker base images. In order to enable easy testing (to check if it fits your needs), a Vagrantfile is provided. 
 
-== Usage
+## Usage
 
 If don't want to polute you environment, just use the vagrant configuration (you need Vagrant and VirtualBox). Open Vagrantfile and look for the line 
 
@@ -19,7 +19,7 @@ This will:
 
 You can publish this image to your Docker Hub repository for further usage if you want. This may ease building other docker x86 images. I've published the image for Ubuntu Trusty [in my repository](https://registry.hub.docker.com/u/gortazar/base32/).
 
-== Checking everything is in place
+## Checking everything is in place
 
 We can check the image creation by login into the vm
 
@@ -52,10 +52,10 @@ Run the image using curl
 
     sudo docker run -t <your username>/curl:0.1 /usr/bin/curl https://github.com
 
-== The script
+## The script
 
-Building the ubuntu x86 docker image is done with the build-base-image.sh script. I've prepared the script to work with any Ubuntu version, however, I only checked Trusty. So there's no guarantee that it will work on other versions. Anyway shouldn't be too hard to adapt the script to whatever Ubuntu version you want to build images for.
+The ubuntu x86 docker image is built with the build-base-image.sh script. I've prepared the script to work with any Ubuntu version. However, I only checked Trusty. So there's no guarantee that it will work on other versions. Anyway shouldn't be too hard to adapt the script to whatever Ubuntu version you want to build images for.
 
-== Acknowledgements
+## Acknowledgements
 
 Most work here is based on [this](http://mwhiteley.com/linux-containers/2013/08/31/docker-on-i386.html) Matt Whiteley blog post about building docker x86 binaries and images. 
